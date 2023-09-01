@@ -1,25 +1,21 @@
-const { sumPlus, sumMinus, sumMultiply,sumDivide } = require("./math");
+function Plus(a,b) {
+    const result = a + b;
+    return result;
+}
 
-test("sum add two numbers", () => {
-    const result = sum(20, 30)
-    const expected = 50;
-    expected(result).toBe(expected);
-});
+function Minus(a,b) {
+    const result = a - b;
+    return result;
+}
 
-test("sum add two numbers", () => {
-    const result = sum(20, 30)
-    const expected = 50;
-    expected(result).toBe(expected);
-});
+function Multi(a,b) {
+    const result = a * b;
+    return result;
+}
 
-test("sum add two numbers", () => {
-    const result = sum(20, 30)
-    const expected = 50;
-    expected(result).toBe(expected);
-});
+function Divide(a,b) {
+    const result = a / b;
+    return result;
+}
 
-test("sum add two numbers", () => {
-    const result = sum(20, 30)
-    const expected = 50;
-    expected(result).toBe(expected);
-});
+module.exports = { Plus, Minus, Multi, Divide }; 
