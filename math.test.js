@@ -1,4 +1,3 @@
-const { multiply } = require("ramda");
 const { Plus, Minus, Multi,Divide } = require("./math");
 
 test("Plus add two numbers", () => {
